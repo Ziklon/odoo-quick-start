@@ -11,7 +11,6 @@
                             <field name="first_name"/>
                             <field name="last_name"/>
                             <field name="date_of_birth"/>
-                            <field name="age"/>
                         </group>
                     </sheet>
                 </form>
@@ -45,7 +44,7 @@
 
 
         <record id="action_frmtest_person_view" model="ir.actions.act_window">
-            <field name="name">List of Personitav222</field>
+            <field name="name">List of Persons</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">frmtest.person</field>
             <field name="view_mode">tree,form,search</field>

@@ -1,2 +1,2 @@
 #!/bin/bash
-watch_and_reload.sh & odoo --dev=all
+watch_and_reload.sh & odoo --dev=all -i base
