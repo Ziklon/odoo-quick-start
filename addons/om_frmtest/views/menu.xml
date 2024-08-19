@@ -1,0 +1,18 @@
+<odoo>
+    <data>
+        <menuitem id="menu_frmtest_root"
+                  name="Modulo Form Test"
+                  sequence="10"/>
+                  
+        <menuitem id="menu_frmtest_maestro"
+                  name="Mantenimiento"
+                  sequence="0"
+                  parent="menu_frmtest_root"/>
+
+            <menuitem id="menu_frmtest_maestro_area"
+                      name="Área"
+                      sequence="3"
+                      parent="menu_frmtest_maestro"
+                      action="action_frmtest_person_view"/>
+    </data>
+</odoo>

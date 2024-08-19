@@ -1,0 +1,63 @@
+<odoo>
+    <data>
+        <!--Vista formulario--> 
+        <record id="view_frmtest_person_form" model="ir.ui.view">
+            <field name="name">view.frmtest.person.form</field>
+            <field name="model">frmtest.person</field>
+            <field name="arch" type="xml">
+                <form string="Persons">
+                    <sheet>
+                        <group>
+                            <field name="first_name"/>
+                            <field name="last_name"/>
+                            <field name="date_of_birth"/>
+                            <field name="age"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!--Vista Arbol-->
+        <record id='view_frmtest_person_tree' model="ir.ui.view">
+            <field name="name">view.frmtest.person.tree</field>
+            <field name="model">frmtest.person</field>
+            <field name="arch" type="xml">
+                <tree string="Persons">
+                    <field name="id"/>
+                    <field name="first_name"/>
+                    <field name="last_name"/>
+                </tree>
+            </field>
+        </record>
+
+        <!--Busqueda-->
+        <record id='view_frmtest_person_search' model='ir.ui.view'>
+            <field name="name">view.frmtest.person.search</field>
+            <field name="model">frmtest.person</field>
+            <field name="arch" type="xml">
+                <search string="Persons">
+                     <field name="first_name"/>
+                    <field name="last_name"/>
+                </search>
+            </field>
+        </record>
+
+
+        <record id="action_frmtest_person_view" model="ir.actions.act_window">
+            <field name="name">List of Personitav222</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">frmtest.person</field>
+            <field name="view_mode">tree,form,search</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Persons CRUD
+                </p>
+                <p>
+                    Click 'Nuevo' para añadir nuevas Persons.
+                </p>
+            </field>
+        </record>
+
+    </data>
+</odoo>
